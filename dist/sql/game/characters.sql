@@ -56,6 +56,7 @@ CREATE TABLE IF NOT EXISTS `characters` (
   `createDate` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `language` VARCHAR(2) DEFAULT NULL,
   `game_points` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `pc_point` bigint(20) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`charId`),
   KEY `account_name` (`account_name`),
   KEY `char_name` (`char_name`),
